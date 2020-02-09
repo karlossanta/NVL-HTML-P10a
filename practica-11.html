@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>NVL-HTML-P10a</title>
+    </head>
+    <body>
+        <h1>Encuesta de Satisfacción</h1>
+        <form method="post" action="miservidor.php">
+            <div>
+                <label for="cp">Código Postal:</label>
+                <input id="cp" type="number" min="01000">
+            </div>
+            <div>
+                <label for="satisfaccion">¿Qué puntuación le darías al producto?:</label>
+                <select id="satisfaccion">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div>
+                <label for="email">Dirección de correo electrónico:</label>
+                <input id="email" type="text">
+            </div>
+            <div>
+                <label for="positivos">¿Qué es lo que más te ha gustado?:</label>
+                <textarea id="positivos"></textarea>
+            </div>
+            <div>
+                <label for="negativos">¿Qué es lo que menos te ha gustado?:</label>
+                <textarea id="negativos"></textarea>
+            </div>
+            <div>
+                Puntúa las siguientes características del producto:
+                <div>
+                    <label for="facilUso">Facilidad de Uso:</label>
+                    <select id="facilUso">
+                        <option value="Excelente">Excelente</option>
+                        <option value="Bueno">Bueno</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Pesimo">Pésimo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="resistencia">Resistencia a los Golpes:</label>
+                    <input name="resistencia" type="radio" value="Excelente">Excelente
+                    <input name="resistencia" type="radio" value="Bueno">Bueno
+                    <input name="resistencia" type="radio" value="Regular">Regular
+                    <input name="resistencia" type="radio" value="Pesimo">Pésimo
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
